@@ -21,13 +21,8 @@ let lastSelectedCell = null; // casilla seleccionada ppr el usuario
 function OnStart () {
   
   // elementos
-  hitAreaE = document.getElementById("game-hit-area");
   boardE = document.getElementById("game-board");
-  turnE = document.getElementById("show-turn");
-  
-  // dimenciones del tablero
-  BOARD_WIDTH = boardE.clientWidth;
-  BOARD_HEIGHT = boardE.clientHeight;
+  hitAreaE = document.getElementById("game-hit-area");
   
   // generar tablero
   let canvas = document.createElement("canvas");

@@ -4,11 +4,26 @@
   margin: 0;
 }
 
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
 /* tablero contenedor */
 #game-board {
-  width: 100vw;
-  height: 100vw;
+  width: 95%;
   position: relative;
+}
+/* tablero contenedor aspect ratio 1:1 */
+#game-board:before {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+@media (min-width: 576px) {
+  #game-board {width: 540px}
 }
 
 /* piezas */
