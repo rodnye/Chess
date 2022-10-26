@@ -1,0 +1,57 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* tablero contenedor */
+#game-board {
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+}
+
+/* piezas */
+.piece {
+  position: absolute;
+  top: 0; left: 0;
+  display: flex;
+  width: 12.5%;
+  height: 12.5%;
+  
+  justify-content: center;
+  align-items: center;
+}
+.piece > img {
+  height: 80%;
+}
+
+/* zona de click */
+#game-hit-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#game-hit-area > .row {
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+#game-hit-area > .row > div {
+  flex-grow: 1;
+  background: none;
+  filter: blur(10px);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
